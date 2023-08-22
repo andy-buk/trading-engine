@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Text;
 
 using TradingEngineServer.Core.Configuration;
+using TradingEngineServer.Logging;
+using TradingEngineServer.Logging.LoggingConfiguration;
 
 namespace TradingEngineServer.Core
 {
@@ -17,10 +19,11 @@ namespace TradingEngineServer.Core
                 // start with configuration
                 services.AddOptions();
                 services.Configure<TradingEngineServerConfiguration>(context.Configuration.GetSection(nameof(TradingEngineServerConfiguration)));
+                services.Configure<LoggerConfiguration>(context.Configuration.GetSection(nameof(LoggerConfiguration)));
 
                 // add singleton objects
                 services.AddSingleton<ITradingEngineServer, TradingEngineServer>();
-                services.AddSingleton<ITextLogger, >();
+                services.AddSingleton<ITextLogger, TextLogger>();
 
                 // add hosted service
                 services.AddHostedService<TradingEngineServer>();

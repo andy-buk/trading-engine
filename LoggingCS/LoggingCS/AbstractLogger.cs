@@ -16,6 +16,6 @@ namespace TradingEngineServer.Logging
         public void Warning(string module, Exception exception) => Log(LogLevel.Debug, module, $"{exception}");
         public void Error(string module, string message) => Log(LogLevel.Debug, module, message);
         public void Error(string module, Exception exception) => Log(LogLevel.Debug, module, $"{exception}");
-        protected abstract void Log(LogLevel loglevel, string module, string message);
+        protected abstract void Log(LogLevel logLevel, string module, string message);
     }
 }
