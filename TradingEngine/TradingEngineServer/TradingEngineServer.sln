@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradingEngineServer", "TradingEngineServer\TradingEngineServer.csproj", "{C22F7675-FDE6-4695-BECD-2CB88BA8B4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingCS", "..\..\LoggingCS\LoggingCS\LoggingCS.csproj", "{302A9DCC-95E9-4927-BF70-203DD92F49BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingCS", "..\..\LoggingCS\LoggingCS\LoggingCS.csproj", "{302A9DCC-95E9-4927-BF70-203DD92F49BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentCS", "InstrumentCS\InstrumentCS.csproj", "{1F014891-94F4-414F-A420-01E4805C8D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersCS", "OrdersCS\OrdersCS.csproj", "{3F93273C-7923-4952-9C38-0C11CD773EFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{302A9DCC-95E9-4927-BF70-203DD92F49BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{302A9DCC-95E9-4927-BF70-203DD92F49BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{302A9DCC-95E9-4927-BF70-203DD92F49BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F014891-94F4-414F-A420-01E4805C8D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F014891-94F4-414F-A420-01E4805C8D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F014891-94F4-414F-A420-01E4805C8D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F014891-94F4-414F-A420-01E4805C8D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F93273C-7923-4952-9C38-0C11CD773EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F93273C-7923-4952-9C38-0C11CD773EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F93273C-7923-4952-9C38-0C11CD773EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F93273C-7923-4952-9C38-0C11CD773EFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
